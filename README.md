@@ -5,7 +5,7 @@ Code for running the bifurcation diagrams and the sensitivity analysis of seagra
 
 <ins>Contact</ins>: antoine.levilain18@gmail.com
 
-This repository contains the code used to conduct the figures of: Abrupt rather than gradual losses of soil organic carbon following disturbance of modelled seagrass ecosystems
+This repository contains the code used to conduct the figures of: Abrupt rather than gradual losses of soil organic carbon following disturbance of modelled seagrass ecosystems.
 
 We performed our analysis using R version 3.6.3.
 
