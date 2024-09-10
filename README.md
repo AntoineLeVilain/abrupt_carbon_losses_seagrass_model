@@ -13,7 +13,7 @@ Do not forget to add your working directory if you want to save the figures.
 
 ## Sensitivity analysis (Figure 4, Figure S11, Figure S15 & Figure S16)
 
-The “sensitivity” folder contains subfolders with the scripts required to run the global sensitivity analysis using the Sobol method for each scenario/case, along with the resulting outputs. In this analysis, higher numerical values in folder names indicate a more deteriorated meadow, meaning it’s closer to the point of collapse. The analysis was conducted across different scenarios for different cases: “f” denotes the feedback case, while “no_f” represents the no feedback case. To recreate the figures, you can plot the pie charts for each scenario/case by running the sensitivity_plot.R script after setting the working directory to the appropriate subfolder.
+The “sensitivity” folder contains subfolders with the scripts required to run the global sensitivity analysis using the Sobol method for each scenario/case, along with the resulting outputs. In this analysis, higher numbers in folder names indicate a more deteriorated meadow, meaning it’s closer to the point of collapse. The analysis was conducted across different scenarios for different cases: “f” denotes the feedback case, while “no_f” represents the no feedback case. To recreate the figures, you can plot the pie charts for each scenario/case by running the sensitivity_plot.R script after setting the working directory to the appropriate subfolder.
 
 
 
