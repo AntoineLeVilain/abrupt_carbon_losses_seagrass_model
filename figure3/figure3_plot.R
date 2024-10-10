@@ -281,8 +281,8 @@ ggsave("plot_temp_CB.png",
 
 plot_ca_cs_ma <-  ggplot(ma22.7seagrass, aes(x = ma)) + 
   geom_line(aes(y = CS_seagrass), color = "#7F7F00", size = 1, linetype = "solid") +
-  geom_line(aes(y = CA_seagrass*40), color = "#FF5200", size = 1, linetype = "solid") +
-  scale_y_continuous(name = "CS", sec.axis = sec_axis(~./15, name="CA")) +
+  geom_line(aes(y = CA_seagrass*20), color = "#FF5200", size = 1, linetype = "solid") +
+  scale_y_continuous(name = "CS", sec.axis = sec_axis(~./20, name="CA")) +
   xlab("ma") + theme_classic() + theme(legend.position = "none")
 
 plot_ca_cs_ma <- plot_ca_cs_ma + geom_line(data = ma22.7bistable, 
@@ -290,7 +290,7 @@ plot_ca_cs_ma <- plot_ca_cs_ma + geom_line(data = ma22.7bistable,
                                            color = "#7F7F00", size = 1, linetype = "dashed")
 
 plot_ca_cs_ma <- plot_ca_cs_ma + geom_line(data = ma22.7bistable, 
-                                           aes(x = ma, y = CA_bistable*40), 
+                                           aes(x = ma, y = CA_bistable*20), 
                                            color = "#FF5200", size = 1, linetype = "dashed")
 
 plot_ca_cs_ma <- plot_ca_cs_ma + geom_line(data = ma22.7bare, 
@@ -298,19 +298,19 @@ plot_ca_cs_ma <- plot_ca_cs_ma + geom_line(data = ma22.7bare,
                                            color = "#7F7F00", size = 1, linetype = "solid")
 
 plot_ca_cs_ma <- plot_ca_cs_ma + geom_line(data = ma22.7bare, 
-                                           aes(x = ma, y = CA_bare*40), 
+                                           aes(x = ma, y = CA_bare*20), 
                                            color = "#FF5200", size = 1, linetype = "solid")
 
 plot_ca_cs_ma <- plot_ca_cs_ma + geom_line(data = `ma1e+06seagrass`, 
-                                           aes(x = ma, y = CA_seagrass*40), 
+                                           aes(x = ma, y = CA_seagrass*20), 
                                            color = "#7F527F", size = 1, linetype = "solid")
 
 plot_ca_cs_ma <- plot_ca_cs_ma + geom_line(data = `ma1e+06bistable`, 
-                                           aes(x = ma, y = CA_bistable*40), 
+                                           aes(x = ma, y = CA_bistable*20), 
                                            color = "#7F527F", size = 1, linetype = "dashed")
 
 plot_ca_cs_ma <- plot_ca_cs_ma + geom_line(data = `ma1e+06bare`, 
-                                           aes(x = ma, y = CA_bare*40), 
+                                           aes(x = ma, y = CA_bare*20), 
                                            color = "#7F527F", size = 1, linetype = "solid")
 
 plot_ca_cs_ma <- plot_ca_cs_ma + geom_line(data = `ma1e+06seagrass`, 
@@ -331,8 +331,8 @@ ggsave("plot_ca_cs_ma.png",
 
 plot_ca_cs_pmax <-  ggplot(pmax22.7seagrass, aes(x = pmax)) + 
   geom_line(aes(y = CS_seagrass), color = "#7F7F00", size = 1, linetype = "solid") +
-  geom_line(aes(y = CA_seagrass*40), color = "#FF5200", size = 1, linetype = "solid") +
-  scale_y_continuous(name = "CS", sec.axis = sec_axis(~./15, name="CA")) +
+  geom_line(aes(y = CA_seagrass*2), color = "#FF5200", size = 1, linetype = "solid") +
+  scale_y_continuous(name = "CS", sec.axis = sec_axis(~./2, name="CA")) +
   xlab("pmax") + theme_classic() + theme(legend.position = "none")
 
 plot_ca_cs_pmax <- plot_ca_cs_pmax + geom_line(data = pmax22.7bistable, 
@@ -340,7 +340,7 @@ plot_ca_cs_pmax <- plot_ca_cs_pmax + geom_line(data = pmax22.7bistable,
                                            color = "#7F7F00", size = 1, linetype = "dashed")
 
 plot_ca_cs_pmax <- plot_ca_cs_pmax + geom_line(data = pmax22.7bistable, 
-                                           aes(x = pmax, y = CA_bistable*40), 
+                                           aes(x = pmax, y = CA_bistable*2), 
                                            color = "#FF5200", size = 1, linetype = "dashed")
 
 plot_ca_cs_pmax <- plot_ca_cs_pmax + geom_line(data = pmax22.7bare, 
@@ -348,19 +348,19 @@ plot_ca_cs_pmax <- plot_ca_cs_pmax + geom_line(data = pmax22.7bare,
                                            color = "#7F7F00", size = 1, linetype = "solid")
 
 plot_ca_cs_pmax <- plot_ca_cs_pmax + geom_line(data = pmax22.7bare, 
-                                           aes(x = pmax, y = CA_bare*40), 
+                                           aes(x = pmax, y = CA_bare*2), 
                                            color = "#FF5200", size = 1, linetype = "solid")
 
 plot_ca_cs_pmax <- plot_ca_cs_pmax + geom_line(data = `pmax1e+06seagrass`, 
-                                           aes(x = pmax, y = CA_seagrass*40), 
+                                           aes(x = pmax, y = CA_seagrass*2), 
                                            color = "#7F527F", size = 1, linetype = "solid")
 
 plot_ca_cs_pmax <- plot_ca_cs_pmax + geom_line(data = `pmax1e+06bistable`, 
-                                           aes(x = pmax, y = CA_bistable*40), 
+                                           aes(x = pmax, y = CA_bistable*2), 
                                            color = "#7F527F", size = 1, linetype = "dashed")
 
 plot_ca_cs_pmax <- plot_ca_cs_pmax + geom_line(data = `pmax1e+06bare`, 
-                                           aes(x = pmax, y = CA_bare*40), 
+                                           aes(x = pmax, y = CA_bare*2), 
                                            color = "#7F527F", size = 1, linetype = "solid")
 
 plot_ca_cs_pmax <- plot_ca_cs_pmax + geom_line(data = `pmax1e+06seagrass`, 
@@ -381,8 +381,8 @@ ggsave("plot_ca_cs_pmax.png",
 
 plot_ca_cs_temp <-  ggplot(temp22.7seagrass, aes(x = temp)) + 
   geom_line(aes(y = CS_seagrass), color = "#7F7F00", size = 1, linetype = "solid") +
-  geom_line(aes(y = CA_seagrass*40), color = "#FF5200", size = 1, linetype = "solid") +
-  scale_y_continuous(name = "CS", sec.axis = sec_axis(~./15, name="CA")) +
+  geom_line(aes(y = CA_seagrass*20), color = "#FF5200", size = 1, linetype = "solid") +
+  scale_y_continuous(name = "CS", sec.axis = sec_axis(~./20, name="CA")) +
   xlab("temp") + theme_classic() + theme(legend.position = "none")
 
 plot_ca_cs_temp <- plot_ca_cs_temp + geom_line(data = temp22.7bistable, 
@@ -390,7 +390,7 @@ plot_ca_cs_temp <- plot_ca_cs_temp + geom_line(data = temp22.7bistable,
                                                color = "#7F7F00", size = 1, linetype = "dashed")
 
 plot_ca_cs_temp <- plot_ca_cs_temp + geom_line(data = temp22.7bistable, 
-                                               aes(x = temp, y = CA_bistable*40), 
+                                               aes(x = temp, y = CA_bistable*20), 
                                                color = "#FF5200", size = 1, linetype = "dashed")
 
 plot_ca_cs_temp <- plot_ca_cs_temp + geom_line(data = temp22.7bare, 
@@ -398,19 +398,19 @@ plot_ca_cs_temp <- plot_ca_cs_temp + geom_line(data = temp22.7bare,
                                                color = "#7F7F00", size = 1, linetype = "solid")
 
 plot_ca_cs_temp <- plot_ca_cs_temp + geom_line(data = temp22.7bare, 
-                                               aes(x = temp, y = CA_bare*40), 
+                                               aes(x = temp, y = CA_bare*20), 
                                                color = "#FF5200", size = 1, linetype = "solid")
 
 plot_ca_cs_temp <- plot_ca_cs_temp + geom_line(data = `temp1e+06seagrass`, 
-                                               aes(x = temp, y = CA_seagrass*40), 
+                                               aes(x = temp, y = CA_seagrass*20), 
                                                color = "#7F527F", size = 1, linetype = "solid")
 
 plot_ca_cs_temp <- plot_ca_cs_temp + geom_line(data = `temp1e+06bistable`, 
-                                               aes(x = temp, y = CA_bistable*40), 
+                                               aes(x = temp, y = CA_bistable*20), 
                                                color = "#7F527F", size = 1, linetype = "dashed")
 
 plot_ca_cs_temp <- plot_ca_cs_temp + geom_line(data = `temp1e+06bare`, 
-                                               aes(x = temp, y = CA_bare*40), 
+                                               aes(x = temp, y = CA_bare*20), 
                                                color = "#7F527F", size = 1, linetype = "solid")
 
 plot_ca_cs_temp <- plot_ca_cs_temp + geom_line(data = `temp1e+06seagrass`, 
